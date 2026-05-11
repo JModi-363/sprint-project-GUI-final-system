@@ -78,8 +78,8 @@ sprint-project-gui-final-system/
 ├── orders_v2.db               # SQLite database (auto-created)
 ├── orders_log.txt             # TXT log file (auto-created)
 │
-├── README.md                  # Project documentation
-└── .gitignore                 # (optional) Git ignore rules
+└── README.md                  # Project documentation
+
 ```
 
 ---
