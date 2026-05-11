@@ -133,20 +133,6 @@ Deployment steps:
 1. Push code to GitHub  
 2. Connect repo to Streamlit Cloud  
 3. Set main file to `streamlit_app_v7.py`  
-4. No `requirements.txt` needed unless you add external packages  
-
----
-
-## 📦 Requirements
-
-Streamlit Cloud includes Streamlit by default.  
-If you want a `requirements.txt`, use:
-
-```
-streamlit
-```
-
-Add more only if you install additional packages.
 
 ---
 
@@ -173,14 +159,3 @@ Add more only if you install additional packages.
 
 Developed by **Jeet Modi**  
 Built with a focus on clean UI, robust data handling, and intuitive artist workflows.
-
----
-
-If you'd like, I can also generate:
-
-- **A polished `.gitignore`**  
-- **A `requirements.txt` optimized for Streamlit Cloud**  
-- **A version of the README with screenshots**  
-- **A version formatted for Canvas / PDF submission**
-
-Just tell me what you want next.
