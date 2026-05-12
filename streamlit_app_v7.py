@@ -451,6 +451,7 @@ def get_size_price_map():
 # -------------------------------------------------------------------
 
 st.title("Paint Order System")
+st.markdown("<a id='top'></a>", unsafe_allow_html=True)
 
 if st.session_state.artist is None:
     st.header("Artist Login")
@@ -501,7 +502,6 @@ else:
     # ---------------------- Place Order ----------------------
     if action == "Place Order":
         st.header("Place a New Order")
-        st.markdown("<a id='top'></a>", unsafe_allow_html=True)
 
         dup = st.session_state.get("duplicate_order")
         if dup:
