@@ -500,8 +500,8 @@ else:
 
     # ---------------------- Place Order ----------------------
     if action == "Place Order":
-        st.empty()
         st.header("Place a New Order")
+        st.markdown("<script>window.scrollTo(0, 0);</script>", unsafe_allow_html=True)
 
         dup = st.session_state.get("duplicate_order")
         if dup:
