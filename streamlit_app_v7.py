@@ -501,7 +501,6 @@ else:
     # ---------------------- Place Order ----------------------
     if action == "Place Order":
         st.header("Place a New Order")
-        st.markdown("<script>window.scrollTo(0, 0);</script>", unsafe_allow_html=True)
 
         dup = st.session_state.get("duplicate_order")
         if dup:
@@ -627,10 +626,9 @@ else:
 
             with col2:
                 if st.button("Change Order Details"):
-                    # Clear preview and return to top of page
                     st.session_state.current_order_for_confirmation = None
-                    st.session_state.action = "Place Order"
                     st.rerun()
+
 
             with col3:
                 if st.button("Cancel Order"):
