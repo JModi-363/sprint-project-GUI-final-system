@@ -501,6 +501,7 @@ else:
     # ---------------------- Place Order ----------------------
     if action == "Place Order":
         st.header("Place a New Order")
+        st.markdown("<a id='top'></a>", unsafe_allow_html=True)
 
         dup = st.session_state.get("duplicate_order")
         if dup:
@@ -627,6 +628,7 @@ else:
             with col2:
                 if st.button("Change Order Details"):
                     st.session_state.current_order_for_confirmation = None
+                    st.markdown("<a href='#top'></a>", unsafe_allow_html=True)
                     st.rerun()
 
 
