@@ -628,6 +628,7 @@ else:
                 if st.button("Change Order Details"):
                     # Clear preview and return to top of page
                     st.session_state.current_order_for_confirmation = None
+                    st.session_state.action = "Place Order"
                     st.rerun()
 
             with col3:
