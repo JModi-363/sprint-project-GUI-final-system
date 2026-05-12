@@ -614,7 +614,8 @@ else:
             st.write(f"**Total for {quantity} items:** ${total_price:.2f}")
             st.write(f"Quantity: {quantity}")
 
-            col1, col2 = st.columns(2)
+            col1, col2, col3 = st.columns(3)
+
             with col1:
                 if st.button("Submit Order"):
                     save_order(order, quantity=quantity)
@@ -622,12 +623,20 @@ else:
                     st.session_state.current_order_for_confirmation = None
                     st.success("Order saved!")
                     st.rerun()
+
             with col2:
+                if st.button("Change Order Details"):
+                    # Clear preview and return to top of page
+                    st.session_state.current_order_for_confirmation = None
+                    st.rerun()
+
+            with col3:
                 if st.button("Cancel Order"):
                     st.session_state.duplicate_order = None
                     st.session_state.current_order_for_confirmation = None
                     st.info("Order cancelled.")
                     st.rerun()
+
 
     # ---------------------- View Orders ----------------------
     elif action == "View Orders":
